@@ -1,0 +1,6 @@
+out/
+output/
+data/cache/
+node_modules/
+__pycache__/
+*.tmp

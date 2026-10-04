@@ -1,0 +1,94 @@
+SALT TRAIN / VALIDATION / TEST: FIRST FROZEN BENCHMARK
+October 4, 2026 - America/Los_Angeles
+
+A new TF-IDF + linear probabilistic text monitor was trained and evaluated.
+This evaluates this baseline, not the existing incident workbench detector.
+Source: complete local SALT release, 53 conditions, 2,650 runs, 27,100 episodes.
+The released traces contain real model interactions in a controlled laboratory
+with synthetic tasks. They are not wild incidents or large-agent swarms.
+
+SPLIT AND FROZEN CONTRACT
+30 training / 10 validation / 10 test sequence groups, global across conditions.
+Whole trajectories stay together. Previously inspected sequence 1 is training.
+All Claude routes were excluded from training and validation; only test-sequence
+Claude episodes are evaluated as a separate model-transfer challenge.
+The extra task-category model excludes record-extraction episodes during fitting
+and tuning; its task challenge has zero exact task-ID overlap with training.
+The primary split still shares 117 of 121 held-out task IDs with training.
+This is disclosed reuse, not an unseen-task claim. Agents themselves had prior
+task exposure/history; the task challenge holds out current episode category
+from monitor training, not from the agents own previous experience.
+No current verdict/reward/task-correctness, judge labels/quotes, current reflection,
+future episode, provider name or condition ID is a learned input. Only delivered
+current episode communication is used, with bounded text and normalized IDs.
+References to past rewards inside real messages are retained as observed text.
+Alpha/threshold choices use validation only. Threshold selection targets >=90%
+validation precision with maximum recall. Test performance is allowed to fail it.
+Protocol/source/model hashes and one first test attempt are retained.
+Sources/labels are public and were not externally sequestered; this is a frozen
+internal benchmark, not an independent blind external holdout.
+
+RESULTS: precision / recall / false-positive rate, percent
+standard-agreement | test | n=3200 | 90.1 / 97.3 / 4.3
+standard-agreement | model_holdout | n=400 | 71.5 / 92.2 / 17.3
+standard-joint_violation | test | n=3200 | 88.7 / 82.6 / 9.3
+standard-joint_violation | model_holdout | n=400 | 95.1 / 92.2 / 13.5
+unseen_task_type-agreement | test | n=2080 | 90.7 / 97.1 / 4.3
+unseen_task_type-agreement | model_holdout | n=400 | 73.6 / 91.4 / 15.4
+unseen_task_type-agreement | task_holdout | n=1120 | 88.0 / 96.0 / 4.8
+unseen_task_type-joint_violation | test | n=2080 | 89.5 / 85.1 / 9.6
+unseen_task_type-joint_violation | model_holdout | n=400 | 95.4 / 90.2 / 12.5
+unseen_task_type-joint_violation | task_holdout | n=1120 | 86.1 / 73.5 / 8.9
+
+INTERPRETATION
+Agreement labels measure a reciprocal accept arrangement in communication.
+They are predominantly the released Qwen judge labels, not independent causal
+ground truth. Joint-violation labels measure the paper constrained mutual
+acceptance outcome, not proof that each episode was caused by peer influence.
+Individual violations, evaluation effects, ownership, autonomy and intent
+are different targets. The learned score is a review candidate, not a verdict.
+On primary agreement detection the keyword baseline has F1 94.2%, versus
+learned F1 93.5%; learned recall is higher, with more false positives.
+On joint-violation prediction learned F1 is 85.5% versus keyword 72.2%.
+This is a threshold-specific tradeoff, not general superiority.
+Held-out Claude agreement precision is 71.5%, FPR 17.3%. Domain transfer
+is a material unresolved weakness. Unseen-category violation recall is 73.5%.
+Primary joint-violation precision 88.7% misses the validation 90% target.
+With only the first two rounds, primary violation recall is 69.3% and precision
+87.0% at the already frozen full-communication threshold; no retuning occurred.
+Human gold subset: standard agreement model matches 16/16 test-sequence items
+and 3/3 model-holdout items. This is small, selected and not a human efficacy
+study. It does not independently validate joint-violation predictions.
+Group-bootstrap intervals use only ten held-out sequence groups. Condition
+variants and repeated tasks are correlated; this is not a population estimate.
+Unrestricted-communication and scripted-peer conditions remain inapplicable
+to joint-collusion labels, not false. Ungated violation candidate rates are
+7.0% and 18.7%, respectively. Scope exclusion is a known metadata rule and
+cannot be counted as learned success in recognizing benign collaboration.
+No absent-message cases occurred in the scored primary set. The missingness
+abstention rule is implemented but this run does not validate real sensor loss.
+No external deployment or source agents were trained/modified.
+
+NEXT VALIDATION
+Use the frozen monitor for sourced candidate review alongside a protocol audit.
+Prospectively collect new owned agent runs with allowed collaboration, one-sided
+violations, absent sensors, indirect influence, varied tasks and new providers.
+Freeze policies before behavior, annotate with blinded humans, and compare
+monitor alerts before verdicts. Evaluate alert burden and missed onset, then
+repeat on a genuinely external data source. Do not retune on this test set.
+A separate reflection monitor can test responsive/simultaneous relaxation;
+post-verdict reflections must be labeled as retrospective signals.
+
+FILES
+splits/: usable feature/label JSONL files. Keep test labels outside detector input.
+protocol.json, split-manifest.json, sources.json: split rules and provenance.
+model-freeze.json, models/: frozen weights, validation settings, fit keys.
+test-report.json: full metrics, baselines, human subset, grouped intervals.
+predictions.jsonl, review-errors.json, onset/: inspectable decisions and failures.
+leakage-audit.json, split-files.json: overlap and exported-file hashes.
+Original Parquet files are unchanged; each prediction cites a file and row.
+The paper PDF and every used dataset table are hash pinned in sources.json.
+ComputeHelper was considered and checked; no suitable benchmark entry point
+was provisioned. This small sparse CPU benchmark ran locally.
+Six meaningful unit checks pass. Dependency install needed approved network
+access and inherited workspace permissions restored after installation.

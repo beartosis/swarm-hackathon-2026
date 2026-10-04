@@ -1,0 +1,254 @@
+{
+ "schemaVersion": 1,
+ "title": "SYNTHETIC \u00b7 constellation demonstration",
+ "scope": {
+  "start": "2026-01-01T09:00:00Z",
+  "end": "2026-01-01T11:00:00Z",
+  "label": "Synthetic fixture, not a research finding",
+  "synthetic": true
+ },
+ "records": [
+  {
+   "id": "page@1",
+   "availableAt": "2026-01-01T09:00:00Z",
+   "eventTime": "2026-01-01T09:00:00Z",
+   "sourceId": "synthetic",
+   "originalId": "page@1",
+   "text": "SYNTHETIC: Writer A posts a timing method for a recurring task.",
+   "sha256": "synthetic-page@1"
+  },
+  {
+   "id": "page@2",
+   "availableAt": "2026-01-01T09:20:00Z",
+   "eventTime": "2026-01-01T09:20:00Z",
+   "sourceId": "synthetic",
+   "originalId": "page@2",
+   "text": "SYNTHETIC: Writer B says \"using A's timing method, our next round is 09:55\".",
+   "sha256": "synthetic-page@2"
+  },
+  {
+   "id": "page@3",
+   "availableAt": "2026-01-01T09:40:00Z",
+   "eventTime": "2026-01-01T09:40:00Z",
+   "sourceId": "synthetic",
+   "originalId": "page@3",
+   "text": "SYNTHETIC: Writer C reports a similar result without naming anyone.",
+   "sha256": "synthetic-page@3"
+  },
+  {
+   "id": "page@4",
+   "availableAt": "2026-01-01T10:05:00Z",
+   "eventTime": "2026-01-01T10:05:00Z",
+   "sourceId": "synthetic",
+   "originalId": "page@4",
+   "text": "SYNTHETIC: Writer D compares own progress to \"the earlier cohort\".",
+   "sha256": "synthetic-page@4"
+  },
+  {
+   "id": "page@5",
+   "availableAt": "2026-01-01T10:30:00Z",
+   "eventTime": "2026-01-01T10:30:00Z",
+   "sourceId": "synthetic",
+   "originalId": "page@5",
+   "text": "SYNTHETIC: unsigned housekeeping edit.",
+   "sha256": "synthetic-page@5"
+  }
+ ],
+ "entities": [
+  {
+   "id": "signature:WriterA",
+   "kind": "source-signature",
+   "label": "WriterA",
+   "availableAt": "2026-01-01T09:00:00Z",
+   "evidenceIds": [
+    "page@1"
+   ]
+  },
+  {
+   "id": "signature:WriterB",
+   "kind": "source-signature",
+   "label": "WriterB",
+   "availableAt": "2026-01-01T09:20:00Z",
+   "evidenceIds": [
+    "page@2"
+   ]
+  },
+  {
+   "id": "signature:WriterC",
+   "kind": "source-signature",
+   "label": "WriterC",
+   "availableAt": "2026-01-01T09:40:00Z",
+   "evidenceIds": [
+    "page@3"
+   ]
+  },
+  {
+   "id": "signature:WriterD",
+   "kind": "source-signature",
+   "label": "WriterD",
+   "availableAt": "2026-01-01T10:05:00Z",
+   "evidenceIds": [
+    "page@4"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "id": "syn-1",
+   "from": "signature:WriterA",
+   "to": "signature:WriterB",
+   "producerSignature": "WriterA",
+   "consumerSignature": "WriterB",
+   "kind": "reported-uptake",
+   "label": "Reported timing-method reuse",
+   "evidenceType": "synthetic fixture",
+   "contributionOriginVersion": "page@1",
+   "consumerReportVersion": "page@2",
+   "evidenceIds": [
+    "page@1",
+    "page@2"
+   ],
+   "availableAt": "2026-01-01T09:20:00Z",
+   "dimensions": {
+    "write": {
+     "status": "observed",
+     "value": "Both synthetic revisions are present."
+    },
+    "read": {
+     "status": "unknown",
+     "value": "No read telemetry in this fixture."
+    },
+    "use": {
+     "status": "reported",
+     "value": "Reported in the receiver text."
+    },
+    "action": {
+     "status": "unknown",
+     "value": "No external action recorded."
+    },
+    "producer": {
+     "status": "unknown",
+     "value": "Signatures are labels, not authenticated agents."
+    }
+   },
+   "missingLinks": [
+    {
+     "dimension": "read",
+     "description": "Which revision did the receiver actually read?"
+    },
+    {
+     "dimension": "action",
+     "description": "Did an attributable action follow?"
+    }
+   ],
+   "citations": [
+    {
+     "recordId": "page@2",
+     "quote": "using A's timing method"
+    }
+   ]
+  },
+  {
+   "id": "syn-2",
+   "from": "signature:WriterA",
+   "to": "signature:WriterC",
+   "producerSignature": "WriterA",
+   "consumerSignature": "WriterC",
+   "kind": "unresolved-candidate",
+   "label": "Unresolved contribution-to-uptake candidate",
+   "evidenceType": "synthetic fixture",
+   "contributionOriginVersion": "page@1",
+   "consumerReportVersion": "page@3",
+   "evidenceIds": [
+    "page@1",
+    "page@3"
+   ],
+   "availableAt": "2026-01-01T09:40:00Z",
+   "dimensions": {
+    "write": {
+     "status": "observed",
+     "value": "Both synthetic revisions are present."
+    },
+    "read": {
+     "status": "unknown",
+     "value": "No read telemetry in this fixture."
+    },
+    "use": {
+     "status": "unknown",
+     "value": "Similar content only."
+    },
+    "action": {
+     "status": "unknown",
+     "value": "No external action recorded."
+    },
+    "producer": {
+     "status": "unknown",
+     "value": "Signatures are labels, not authenticated agents."
+    }
+   },
+   "missingLinks": [
+    {
+     "dimension": "read",
+     "description": "Which revision did the receiver actually read?"
+    },
+    {
+     "dimension": "action",
+     "description": "Did an attributable action follow?"
+    }
+   ],
+   "citations": []
+  },
+  {
+   "id": "syn-3",
+   "from": "signature:WriterB",
+   "to": "signature:WriterD",
+   "producerSignature": "WriterB",
+   "consumerSignature": "WriterD",
+   "kind": "unresolved-candidate",
+   "label": "Unresolved contribution-to-uptake candidate",
+   "evidenceType": "synthetic fixture",
+   "contributionOriginVersion": "page@2",
+   "consumerReportVersion": "page@4",
+   "evidenceIds": [
+    "page@2",
+    "page@4"
+   ],
+   "availableAt": "2026-01-01T10:05:00Z",
+   "dimensions": {
+    "write": {
+     "status": "observed",
+     "value": "Both synthetic revisions are present."
+    },
+    "read": {
+     "status": "unknown",
+     "value": "No read telemetry in this fixture."
+    },
+    "use": {
+     "status": "unknown",
+     "value": "Similar content only."
+    },
+    "action": {
+     "status": "unknown",
+     "value": "No external action recorded."
+    },
+    "producer": {
+     "status": "unknown",
+     "value": "Signatures are labels, not authenticated agents."
+    }
+   },
+   "missingLinks": [
+    {
+     "dimension": "read",
+     "description": "Which revision did the receiver actually read?"
+    },
+    {
+     "dimension": "action",
+     "description": "Did an attributable action follow?"
+    }
+   ],
+   "citations": []
+  }
+ ],
+ "claims": [],
+ "cutoffPolicy": "Synthetic fixture: edges appear when both cited revisions are available."
+}

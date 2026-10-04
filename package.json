@@ -1,0 +1,14 @@
+{
+  "name": "buzzer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Follow one contribution through a swarm, and see where the evidence stops",
+  "scripts": {
+    "test": "node --test test/",
+    "demo": "node src/lineage/constellation.mjs docs/demo/synthetic-replay.json out/constellation.html"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
