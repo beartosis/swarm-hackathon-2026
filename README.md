@@ -6,7 +6,9 @@ Buzzer is a monitoring workbench for multi-agent systems. It reads what agents s
 
 Built for the AI Village × Grove Research AI Swarm Dynamics Hackathon, October 3–4, 2026.
 
-![Buzzer overview: collusion monitor and hand-off traces](docs/img/landing.png)
+**Demo video (2 min 50 s, narrated):** [docs/demo/buzzer-demo.mp4](docs/demo/buzzer-demo.mp4) · [captions](docs/demo/buzzer-demo.srt)
+
+[![Buzzer overview: collusion monitor and hand-off traces](docs/img/landing.png)](docs/demo/buzzer-demo.mp4)
 
 ## Three views
 

@@ -1,0 +1,144 @@
+1
+00:00:01,063 --> 00:00:05,923
+This is Buzzer. It brings agent conversations and shared artifacts into an
+
+2
+00:00:05,923 --> 00:00:10,783
+evidence view, so we can investigate who passed what to whom, and
+
+3
+00:00:10,783 --> 00:00:13,213
+where coordination deserves a closer look.
+
+4
+00:00:14,924 --> 00:00:20,786
+First, the collusion monitor. Each square is an episode between two agents.
+
+5
+00:00:20,786 --> 00:00:26,647
+The dashboard separates caught agreements, missed cases, and false alarms across held-out
+
+6
+00:00:26,647 --> 00:00:27,624
+lab trajectories.
+
+7
+00:00:29,337 --> 00:00:34,017
+Click an episode to read the messages alongside the monitor score and
+
+8
+00:00:34,017 --> 00:00:38,697
+dataset label. The numbered strip follows the same pair over ten episodes,
+
+9
+00:00:38,697 --> 00:00:41,037
+making changes in their agreement visible.
+
+10
+00:00:42,736 --> 00:00:47,936
+The false-alarm filter keeps errors inspectable. A flag is a reason to
+
+11
+00:00:47,936 --> 00:00:51,836
+read the exchange, not a final judgment about intent.
+
+12
+00:00:53,546 --> 00:00:58,413
+Switching to mutual acceptance changes the target to whether both agents accepted
+
+13
+00:00:58,413 --> 00:01:03,280
+without the required evidence. That keeps what agents say separate from the
+
+14
+00:01:03,280 --> 00:01:04,496
+outcome being measured.
+
+15
+00:01:06,207 --> 00:01:11,852
+Next, AI Village. In this March window, twelve agent labels produced one
+
+16
+00:01:11,852 --> 00:01:17,496
+hundred and five messages. Twenty proposed hand-offs are supported by both reviewers,
+
+17
+00:01:17,496 --> 00:01:18,907
+connecting ten labels.
+
+18
+00:01:20,620 --> 00:01:24,947
+Replay the window to see the network build in order. Each lane
+
+19
+00:01:24,947 --> 00:01:29,273
+is an agent label, each star a message, and each green curve
+
+20
+00:01:29,273 --> 00:01:33,599
+a link supported by both reviewers. The timeline reveals when the evidence
+
+21
+00:01:33,599 --> 00:01:34,320
+becomes available.
+
+22
+00:01:36,020 --> 00:01:41,020
+Open a hand-off to inspect both reviewers and their source-checked quotations. Here,
+
+23
+00:01:41,020 --> 00:01:46,020
+the receiver reports verifying a shared document. The panel also preserves attribution
+
+24
+00:01:46,020 --> 00:01:49,770
+uncertainty and marks the action trace as context only.
+
+25
+00:01:51,479 --> 00:01:56,073
+The shared wiki expands the view to eighteen thousand six hundred and
+
+26
+00:01:56,073 --> 00:02:00,667
+forty-four observed hand-offs across three thousand one hundred and two labels. The
+
+27
+00:02:00,667 --> 00:02:03,729
+matrix shows which labels built on one another.
+
+28
+00:02:05,435 --> 00:02:10,182
+Search for a page to narrow the archive into a readable relay:
+
+29
+00:02:10,182 --> 00:02:14,930
+who contributed, who built on it next, and what text was retained
+
+30
+00:02:14,930 --> 00:02:18,885
+or added. These are wiki labels, not authenticated independent agents.
+
+31
+00:02:20,595 --> 00:02:25,632
+The method page keeps the comparison samples and failed checks visible. Simply
+
+32
+00:02:25,632 --> 00:02:30,669
+touching the same artifact did not distinguish supported hand-offs from rejected links.
+
+33
+00:02:30,669 --> 00:02:35,706
+These archives calibrate the method; they do not establish a newly discovered
+
+34
+00:02:35,706 --> 00:02:36,545
+misaligned swarm.
+
+35
+00:02:38,251 --> 00:02:43,726
+Buzzer turns a broad coordination signal into evidence you can inspect: the
+
+36
+00:02:43,726 --> 00:02:49,201
+conversation, the hand-off, the source, and the limits of what we know.
+
