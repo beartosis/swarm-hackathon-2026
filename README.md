@@ -8,7 +8,9 @@ Built for the AI Village × Grove Research AI Swarm Dynamics Hackathon, October 
 
 **Demo video (2 min 50 s, narrated):** [docs/demo/buzzer-demo.mp4](docs/demo/buzzer-demo.mp4) · [captions](docs/demo/buzzer-demo.srt)
 
-[![Buzzer overview: collusion monitor and hand-off traces](docs/img/landing.png)](docs/demo/buzzer-demo.mp4)
+[![Buzzer demo, sped up six times and silent; click for the full narrated video](docs/img/demo-preview.gif)](docs/demo/buzzer-demo.mp4)
+
+![Buzzer overview: collusion monitor and hand-off traces](docs/img/landing.png)
 
 ## Three views
 
